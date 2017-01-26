@@ -93,10 +93,24 @@ body {
     .site-header {
       -ms-flex-align: center;
           align-items: center; } }
+  @media (min-width: 1000px) {
+    .site-header {
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
+
+.h1 {
+  display: none;
+  position: absolute; }
 
 @media (min-width: 600px) {
   .logo {
     width: 100%; } }
+
+@media (min-width: 1000px) {
+  .logo {
+    width: 200px;
+    text-align: left;
+    padding-left: 2rem; } }
 
 .logo-wrap {
   margin-bottom: 1rem; }
@@ -104,6 +118,11 @@ body {
     .logo-wrap {
       margin-bottom: 0;
       width: 25%; } }
+  @media (min-width: 1000px) {
+    .logo-wrap {
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+      text-align: left; } }
 
 .section-text {
   color: white;
@@ -112,19 +131,25 @@ body {
   @media (min-width: 600px) {
     .section-text {
       font-size: 0.7rem; } }
+  @media (min-width: 1000px) {
+    .section-text {
+      font-size: 0.8rem; } }
 
 .section-menu {
   font-size: 0.9rem; }
   @media (min-width: 600px) {
     .section-menu {
       font-size: 0.6rem; } }
+  @media (min-width: 1000px) {
+    .section-menu {
+      font-size: 0.7rem; } }
 
 .options {
   width: 100%; }
   @media (min-width: 600px) {
     .options {
-      -ms-flex-preferred-size: 35%;
-          flex-basis: 35%; } }
+      -ms-flex-preferred-size: 75%;
+          flex-basis: 75%; } }
 
 @media (min-width: 600px) {
   .options-wrapper {
@@ -136,6 +161,9 @@ body {
   @media (min-width: 600px) {
     .footer-text {
       font-size: 0.7rem; } }
+  @media (min-width: 1000px) {
+    .footer-text {
+      font-size: 0.8rem; } }
 
 .instanews {
   text-transform: uppercase; }
@@ -146,3 +174,7 @@ body {
   @media (min-width: 600px) {
     .footer {
       height: 10vh; } }
+  @media (min-width: 1000px) {
+    .footer {
+      text-align: left;
+      padding-left: 2rem; } }

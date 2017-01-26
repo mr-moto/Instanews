@@ -1,8 +1,11 @@
 .footer-text {
     color: #c2c2c2;
     font-size: 0.9rem;
-    @include media($tablet-width){
+    @include tablet{
         font-size: 0.7rem;
+    }
+    @include desktop {
+        font-size: 0.8rem;
     }
 }
 .instanews {
@@ -11,7 +14,11 @@
 .footer {
     text-align: center;
     height: 20vh;
-    @include media($tablet-width){
+    @include tablet{
         height: 10vh;
+    }
+    @include desktop{
+        text-align: left;
+        padding-left: 2rem;
     }
 }

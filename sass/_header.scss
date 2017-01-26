@@ -6,44 +6,67 @@
     text-align: center;
     height: 90vh;
     align-content: center;
-    @include media($tablet-width){
+    @include tablet{
         align-items: center;
     }
+    @include desktop {
+        justify-content: flex-start;
+    }
+}
+.h1 {
+    display: none;
+    position: absolute;
 }
 .logo {
-    @include media($tablet-width){
-        width: 100%
+    @include tablet{
+        width: 100%;
     }
+    @include desktop {
+        width: 200px;
+        text-align: left;
+        padding-left: 2rem;
+    }
+
 }
 .logo-wrap{
     margin-bottom: 1rem;
-        @include media($tablet-width){
+    @include tablet{
         margin-bottom: 0;
-        width: 25%
-        }
+        width: 25%;
+    }
+    @include desktop {
+        flex-basis: 25%;
+        text-align: left;
+    }
 }
 .section-text {
     color: white;
     font-size: 0.8rem;
     margin-bottom: 1rem;
-    @include media($tablet-width){
+    @include tablet{
         font-size: 0.7rem;
+    }
+    @include desktop {
+        font-size: 0.8rem;
     }
 }
 .section-menu {
     font-size: 0.9rem;
-    @include media($tablet-width){
+    @include tablet{
         font-size: 0.6rem;
+    }
+    @include desktop{
+        font-size: 0.7rem;
     }
 }
 .options {
     width: 100%;
-    @include media($tablet-width){
-        flex-basis: 35%;
+    @include tablet{
+        flex-basis: 75%;
     } 
 }
 .options-wrapper {
-    @include media($tablet-width){
+    @include tablet{
         text-align: left;
     } 
 }

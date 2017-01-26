@@ -1,9 +1,9 @@
-@mixin media($tablet-width) {
+@mixin tablet {
   @media (min-width: $tablet-width) {
     @content;
   }
 }
-@mixin media($desktop-width) {
+@mixin desktop {
   @media (min-width: $desktop-width) {
     @content;
   }
