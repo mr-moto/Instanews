@@ -1,10 +1,17 @@
-.copyright {
+.footer-text {
     color: #c2c2c2;
-    font-family: 'open_sans_web';
+    font-size: 0.9rem;
+    @include media($tablet-width){
+        font-size: 0.7rem;
+    }
 }
 .instanews {
     text-transform: uppercase;
 }
 .footer {
     text-align: center;
+    height: 20vh;
+    @include media($tablet-width){
+        height: 10vh;
+    }
 }

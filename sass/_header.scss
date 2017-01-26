@@ -1,0 +1,49 @@
+.site-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    align-content: center;
+    @include media($tablet-width){
+        align-items: center;
+    }
+}
+.logo {
+    @include media($tablet-width){
+        width: 100%
+    }
+}
+.logo-wrap{
+    margin-bottom: 1rem;
+        @include media($tablet-width){
+        margin-bottom: 0;
+        width: 25%
+        }
+}
+.section-text {
+    color: white;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    @include media($tablet-width){
+        font-size: 0.7rem;
+    }
+}
+.section-menu {
+    font-size: 0.9rem;
+    @include media($tablet-width){
+        font-size: 0.6rem;
+    }
+}
+.options {
+    width: 100%;
+    @include media($tablet-width){
+        flex-basis: 35%;
+    } 
+}
+.options-wrapper {
+    @include media($tablet-width){
+        text-align: left;
+    } 
+}
