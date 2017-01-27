@@ -155,6 +155,25 @@ body {
   .options-wrapper {
     text-align: left; } }
 
+.news-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.results-wrap {
+  position: relative; }
+
+.news-img {
+  width: 100%; }
+
+.h3-wrap {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); }
+
 .footer-text {
   color: #c2c2c2;
   font-size: 0.9rem; }

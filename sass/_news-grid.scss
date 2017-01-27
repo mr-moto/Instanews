@@ -1,0 +1,18 @@
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.results-wrap {
+    position: relative;
+}
+.news-img {
+    width: 100%;
+}
+.h3-wrap {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    background-color:rgba(0, 0, 0, 0.5);
+}
