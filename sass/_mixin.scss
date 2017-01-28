@@ -1,3 +1,9 @@
+@mixin mobile-double-img {
+  @media (min-width: $mobile-double-img-width) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: $tablet-width) {
     @content;

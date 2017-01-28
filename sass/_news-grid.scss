@@ -1,15 +1,23 @@
-.news-grid {
+.grid-list {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+.news-grid {
 
 }
-.results-wrap {
+.article {
     position: relative;
+    overflow: hidden;
+    height: 420px;
+    @include mobile-double-img {
+        flex-basis: 50%;
+    }
 }
 .news-img {
-    width: 100%;
+    height: 100%;
 }
-.h3-wrap {
+.text-wrapper {
     color: white;
     position: absolute;
     bottom: 0;
