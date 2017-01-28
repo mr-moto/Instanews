@@ -1,8 +1,17 @@
 $(function () {
 
+$(".loader").hide();
+
 $('select').on('change', function(){
     $('.site-header').toggleClass('site-header-up').removeClass('site-header');
     $('.logo').toggleClass('logo-up').removeClass('logo');
+    $('.logo-wrap').toggleClass('logo-wrap-up').removeClass('logo-wrap');
+
+    $('.loader').show();
+    
+    
+
+
 
     var $news = $('.grid-list');
     $news.empty();// emptys .grid-list
@@ -15,6 +24,7 @@ $('select').on('change', function(){
     })
 
     .done(function(data){ //grabs data from api
+        $('.loader').hide();
         var imgFilter = data.results.filter(function(imgdata){ // filter object -> results ->
             return imgdata.multimedia.length; //returns multimedia with length of 1 or more
         }).slice(0,12); // grabs the 0-12
@@ -27,5 +37,6 @@ $('select').on('change', function(){
         })
 
     })
+
 })
 })
