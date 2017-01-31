@@ -1,21 +1,28 @@
-.footer-text {
-    color: #c2c2c2;
-    font-size: 0.9rem;
-    @include tablet{
-        font-size: 0.9rem;
-    }
-    @include desktop {
-        font-size: 0.9rem;
-    }
-}
-.instanews {
-    text-transform: uppercase;
-}
+
 .footer {
     text-align: center;
     height: 10vh;
     @include desktop{
         text-align: left;
         padding-left: 2rem;
+    }
+
+    .footer-text-wrapper {
+        padding: 1rem 0;
+
+        .footer-text {
+            color: #c2c2c2;
+            font-size: 0.9rem;
+            @include tablet{
+                font-size: 0.9rem;
+            }
+            @include desktop {
+                font-size: 0.9rem;
+            }
+            
+            .instanews {
+                text-transform: uppercase;
+            }
+        }
     }
 }

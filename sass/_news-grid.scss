@@ -19,6 +19,8 @@
     position: relative;
     overflow: hidden;
 
+
+
     @include mobile-double-img {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
@@ -48,14 +50,8 @@
     background-color:rgba(0, 0, 0, 0.5);
     width: 100%;
     line-height: 1.5;
-    transform: translate(0px, 100px)
-}
-@keyframes showAbstract {
-    0% {
-        transform: translate(0px, 100px);
-    }
-    100% {
-        transform: translate(0px,0px);
-        display: inherit;
-    }
+    transform: translate(0px, 200px);
+    animation-name: hideAbstract;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }

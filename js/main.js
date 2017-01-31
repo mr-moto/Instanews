@@ -1,7 +1,8 @@
 $(function () {
 
     $('.loader').hide();
-
+    $('select').selectric();
+        
     $('select').on('change', function () {
         $('.site-header').addClass('site-header-up').removeClass('site-header');
         $('.logo').addClass('logo-up').removeClass('logo');
