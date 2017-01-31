@@ -1,3 +1,6 @@
+//======================================
+//  Mixin
+//======================================
 @mixin mobile-double-img {
   @media (min-width: $mobile-double-img-width) {
     @content;

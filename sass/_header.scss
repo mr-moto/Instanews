@@ -1,23 +1,37 @@
+/*======================================*/
+/*  Header*/
+/*======================================*/
 h1 {
     display: none;
     position: absolute;
 }
 .site-header {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     height: 90vh;
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     @include tablet{
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     @include desktop {
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
     .logo-wrap{
         margin-bottom: 1rem;
+        -webkit-transition: all 0.5s ease-out 0.5s;
         transition: all 0.5s ease-out 0.5s;
         @include tablet{
             margin-bottom: 0;
@@ -25,7 +39,8 @@ h1 {
             width: 23%;
         }
         @include desktop {
-            flex-basis: 25%;
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%;
             text-align: left;
             margin-right: 2rem;
             max-width: 315px;
@@ -43,22 +58,31 @@ h1 {
     }
 }
 .site-header-up {
+    -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
     height: auto;
     width: 100%;
     padding: 2.5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     @include tablet {
         height: auto;
         padding: 0;
     }
     @include desktop {
         height: 140px;
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
     .logo-wrap-up {
         @include tablet{
@@ -66,7 +90,8 @@ h1 {
             margin: 32px 2rem 35px 0;
         }
         @include desktop {
-            flex-basis: 20%;
+            -ms-flex-preferred-size: 20%;
+                flex-basis: 20%;
             max-width: 175px;
             margin: 32px 0 35px 0;
         }
@@ -85,11 +110,13 @@ h1 {
     width: 100%;
 
     @include tablet{
-        flex-basis: 49%;
+        -ms-flex-preferred-size: 49%;
+            flex-basis: 49%;
         margin: 2rem 0;
     } 
     @include desktop {
-        flex-basis: 15%;
+        -ms-flex-preferred-size: 15%;
+            flex-basis: 15%;
         margin: 2rem 0;
     }
     .options-wrapper {
@@ -116,16 +143,3 @@ h1 {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
