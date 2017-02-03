@@ -1,56 +1,48 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Instanews</title>
-
     <link rel="stylesheet" href="build/css/style.min.css">
+  </head>
+  <body>
+  <header class='site-header'>
+    <div class='logo-wrap'>
+      <h1>New York Times Instanews</h1>
+      <img class='logo' src='images/nyt-logo.svg' alt='NYT logo' />
+    </div>
+    <div class='options'>
+      <div class="options-wrapper">
+        <p class='section-text'>Choose a section:</p>
+        <select class='section-menu'>
+          <option>Sections...</option>
+          <option value="home">Home</option>
+          <option value="science">Science</option>
+          <option value="business">Business</option>
+          <option value="sports">Sports</option>
+          <option value="technology">Technology
+          <option value="fashion">Fashion</option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <section class='news-grid'>
+    <h2 class="screen-reader">News Grid</h2>
+      <div class="loader-container">
+        <img class='loader' src='images/ajax-loader.gif' alt='Loading circle' />
+      </div>
+      <ul class='grid-list'>
+      </ul>
+  </section>
+  <footer class='footer'>
+    <div class='footer-text-wrapper'>
+      <p class='footer-text'>&copy; Copyright 2016 <span class='instanews'>Instanews</span></p>
+    </div>
+  </footer>
 
-</head>
-
-<body>
-    <header class='site-header'>
-        <div class='logo-wrap'>
-            <h1>New York Times Instanews</h1>
-            <img class='logo' src='images/nyt-logo.svg' alt='NYT logo' />
-        </div>
-        <div class='options'>
-            <div class="options-wrapper">
-                <p class='section-text'>Choose a section:</p>
-                <select class='section-menu'>
-                    <option>Sections...</option>
-                    <option value="home">Home</option>
-                    <option value="science">Science</option>
-                    <option value="business">Business</option>
-                    <option value="sports">Sports</option>
-                    <option value="technology">Technology
-                    <option value="fashion">Fashion</option>
-                </select>
-            </div>
-        </div>
-    </header>
-    <section class='news-grid'>
-        <div class="loader-container">
-            <img class='loader' src='images/ajax-loader.gif' alt='Loading circle' />
-        </div>
-        <ul class='grid-list'>
-        </ul>
-    </section>
-    <footer class='footer'>
-        <div class='footer-text-wrapper'>
-            <p class='footer-text'>&copy; Copyright 2016 <span class='instanews'>Instanews</span></p>
-        </div>
-    </footer>
-
-
-    <script src="jquery-3.1.1.min.js"></script>
-    <script src="build/js/main.min.js"></script>
-    <script src="jquery.selectric.js"></script>
-</body>
-
-
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="build/js/main.min.js"></script>
+  <script src="jquery.selectric.js"></script>
+  </body>
 </html>
