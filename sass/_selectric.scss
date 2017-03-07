@@ -4,7 +4,7 @@
 .selectric-wrapper {
   position: relative;
   cursor: pointer;
-  width: 150px;
+  display: inline-block;
   margin: 0 auto;
   @include tablet {
       margin: 0;
@@ -16,9 +16,10 @@
 }
 
 .selectric {
-  border-radius: 6px;
+  border-radius: 2px;
   background: steelblue;
   position: relative;
+  width: 200px;
 }
 
 .selectric .label {

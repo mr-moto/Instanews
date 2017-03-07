@@ -1,37 +1,23 @@
 /*======================================*/
 /*  Header*/
 /*======================================*/
-h1 {
-    display: none;
-    position: absolute;
-}
+
 .site-header {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     height: 90vh;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     @include tablet{
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
     }
     @include desktop {
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
+        justify-content: flex-start;
     }
     .logo-wrap{
         margin-bottom: 1rem;
-        -webkit-transition: all 0.5s ease-out 0.5s;
         transition: all 0.5s ease-out 0.5s;
         @include tablet{
             margin-bottom: 0;
@@ -39,24 +25,64 @@ h1 {
             width: 23%;
         }
         @include desktop {
-            -ms-flex-preferred-size: 25%;
-                flex-basis: 25%;
+            flex-basis: 25%;
             text-align: left;
             margin-right: 2rem;
             max-width: 315px;
         }
-        .logo {
-            @include tablet{
-                width: 100%;
-            }
-            @include desktop {
-                width: 215px;
-                text-align: left;
-                padding-left: 2rem;
+    }
+    .logo {
+        @include tablet{
+            width: 100%;
+        }
+        @include desktop {
+            width: 215px;
+            text-align: left;
+            padding-left: 2rem;
+        }
+    }
+}
+
+.options {
+    width: 100%;
+
+    @include tablet{
+        -ms-flex-preferred-size: 49%;
+            flex-basis: 49%;
+        margin: 2rem 0;
+    } 
+    @include desktop {
+        -ms-flex-preferred-size: 15%;
+            flex-basis: 15%;
+        margin: 2rem 0;
+    }
+    .options-wrapper {
+        @include tablet{
+        text-align: left;
+        } 
+    }
+    .section-text {
+        color: white;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        @include tablet{
+            font-size: 0.9rem;
+        }
+        @include desktop {
+            font-size: 1rem;
+        }
+        .section-menu {
+            font-size: 1.1rem;
+            @include desktop{
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
             }
         }
     }
 }
+
+
+
 .site-header-up {
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
@@ -102,43 +128,6 @@ h1 {
                 width: 68px;
                 padding-right: 3rem;
                 padding-bottom: 0;
-            }
-        }
-    }
-}
-.options {
-    width: 100%;
-
-    @include tablet{
-        -ms-flex-preferred-size: 49%;
-            flex-basis: 49%;
-        margin: 2rem 0;
-    } 
-    @include desktop {
-        -ms-flex-preferred-size: 15%;
-            flex-basis: 15%;
-        margin: 2rem 0;
-    }
-    .options-wrapper {
-        @include tablet{
-        text-align: left;
-        } 
-    }
-    .section-text {
-        color: white;
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-        @include tablet{
-            font-size: 0.9rem;
-        }
-        @include desktop {
-            font-size: 1rem;
-        }
-        .section-menu {
-            font-size: 1.1rem;
-            @include desktop{
-                font-size: 1.1rem;
-                margin-bottom: 1rem;
             }
         }
     }
