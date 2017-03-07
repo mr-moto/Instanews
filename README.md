@@ -7,7 +7,6 @@ Take-aways and useful references for future projects:
 * SASS partials and website style organization
 * CSS and Javascript animations/tranistions
 
----
 
 # Technologies Used
 * Google Chrome/Dev Tools
@@ -17,9 +16,8 @@ Take-aways and useful references for future projects:
 * SCSS - @mixins, variables, and partials 
 * Javascript libraries jQuery and Selectric plugin
 
----
 
-# Major Learnings
+# Learnings
 * How to pull info with Ajax from an API to parse and populate content onto a grid.
 
 * Installing packages using npm (gulp, eslint etc.)
@@ -32,3 +30,14 @@ Take-aways and useful references for future projects:
    * monitor for changes/saves using watch in conjunction with other packages
 
 * SCSS to modulate files for easy maintainability and structure.
+
+---
+
+# CHANGELOG
+
+## 2017-03-07
+* Cleaned up sass code
+* selectric box resize
+
+##2017-01-25
+* Project hand-in
