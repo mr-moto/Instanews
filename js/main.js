@@ -24,25 +24,29 @@ $(function() {
 
         .done(function(data) {
             $('.loader').hide();
-            var imgFilter = data.results.filter(function(imgdata) {
-                return imgdata.multimedia.length > 4;
-            }).slice(0, 12);
-            $.each(imgFilter, function(index, value) {
+
+            function getFirstTwelveResults() {
+                return data.results.filter(function(imgdata) {
+                    return imgdata.multimedia.length > 4;
+                }).slice(0, 12);
+            }
+
+            $.each(getFirstTwelveResults(), function(index, value) {
                 var imgLink = '';
                 imgLink = value.multimedia[4].url;
 
                 var $articlelist = $('.grid-list');
-                var listItem = '';
+                var listitem = '';
 
-                listItem += '<li class="article"><a href="'
-                listItem += value.url
-                listItem += '"><img class="news-img" src="'
-                listItem += imgLink
-                listItem += '"/></a><div class="text-wrapper"><p class="article-text">'
-                listItem += value.abstract
-                listItem += '</p></div></li>'
+                listitem += '<li class="article"><a href="'
+                listitem += value.url
+                listitem += '"><img class="news-img" src="'
+                listitem += imgLink
+                listitem += '"/></a><div class="text-wrapper"><p class="article-text">'
+                listitem += value.abstract
+                listitem += '</p></div></li>'
 
-                $articlelist.append(listItem)
+                $articlelist.append(listitem)
             })
         })
     });
