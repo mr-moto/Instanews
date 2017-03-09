@@ -1,28 +1,23 @@
-/*======================================*/
-/*  Footer*/
-/*======================================*/
+// footer
 .footer {
     text-align: center;
     height: 10vh;
-    @include desktop{
+    @include desktop {
         text-align: left;
         padding-left: 2rem;
     }
-
-    .footer-text-wrapper {
+    div {
         padding: 1rem 0;
-
-        .footer-text {
+        p {
             color: #c2c2c2;
             font-size: 0.9rem;
-            @include tablet{
+            @include tablet {
                 font-size: 0.9rem;
             }
             @include desktop {
                 font-size: 0.9rem;
             }
-            
-            .instanews {
+            .instanews-text {
                 text-transform: uppercase;
             }
         }

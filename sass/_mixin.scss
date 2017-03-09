@@ -1,19 +1,18 @@
-//======================================
-//  Mixin
-//======================================
+// mixin
 @mixin mobile-double-img {
-  @media (min-width: $mobile-double-img-width) {
-    @content;
-  }
+    @media (min-width: $mobile-double-img-width) {
+        @content;
+    }
 }
 
 @mixin tablet {
-  @media (min-width: $tablet-width) {
-    @content;
-  }
+    @media (min-width: $tablet-width) {
+        @content;
+    }
 }
+
 @mixin desktop {
-  @media (min-width: $desktop-width) {
-    @content;
-  }
+    @media (min-width: $desktop-width) {
+        @content;
+    }
 }

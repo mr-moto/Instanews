@@ -1,7 +1,4 @@
-/*======================================*/
-/*  Header*/
-/*======================================*/
-
+// header
 .site-header {
     width: 100%;
     display: flex;
@@ -10,16 +7,16 @@
     text-align: center;
     height: 90vh;
     align-content: center;
-    @include tablet{
+    @include tablet {
         align-items: center;
     }
     @include desktop {
         justify-content: flex-start;
     }
-    .logo-wrap{
+    .logo-wrap {
         margin-bottom: 1rem;
         transition: all 0.5s ease-out 0.5s;
-        @include tablet{
+        @include tablet {
             margin-bottom: 0;
             margin-right: 1rem;
             width: 23%;
@@ -33,7 +30,7 @@
     }
     .logo {
         transition: all .5s ease-out .5s;
-        @include tablet{
+        @include tablet {
             width: 100%;
         }
         @include desktop {
@@ -46,41 +43,38 @@
 
 .options {
     width: 100%;
-
-    @include tablet{
+    @include tablet {
         flex-basis: 49%;
         margin: 2rem 0;
-    } 
+    }
     @include desktop {
         flex-basis: 15%;
         margin: 2rem 0;
     }
     .options-wrapper {
-        @include tablet{
-        text-align: left;
-        } 
+        @include tablet {
+            text-align: left;
+        }
     }
     .section-text {
         color: white;
         font-size: 0.8rem;
         margin-bottom: 1rem;
-        @include tablet{
+        @include tablet {
             font-size: 0.9rem;
         }
         @include desktop {
             font-size: 1rem;
         }
-        .section-menu {
+    }
+    .section-menu {
+        font-size: 1.1rem;
+        @include desktop {
             font-size: 1.1rem;
-            @include desktop{
-                font-size: 1.1rem;
-                margin-bottom: 1rem;
-            }
+            margin-bottom: 1rem;
         }
     }
 }
-
-
 
 .site-header-up {
     transition: all .5s ease-out;
@@ -101,7 +95,7 @@
         justify-content: flex-start;
     }
     .logo-wrap {
-        @include tablet{
+        @include tablet {
             max-width: 175px;
             margin: 32px 2rem 35px 0;
         }

@@ -1,13 +1,13 @@
-$(function () {
+$(function() {
 
     $('.loader').hide();
     $('select').selectric();
 
-    function toggleSmallHeader() {  
+    function toggleSmallHeader() {
         $('.site-header').addClass('site-header-up').removeClass('site-header');
     }
 
-    $('select').on('change', function () {
+    $('select').on('change', function() {
 
         var category = this.value;
 
@@ -22,34 +22,34 @@ $(function () {
             dataType: 'json'
         })
 
-        .done(function (data) {
-            $('.loader').hide(); 
-            var imgFilter = data.results.filter(function (imgdata) { 
+        .done(function(data) {
+            $('.loader').hide();
+            var imgFilter = data.results.filter(function(imgdata) {
                 return imgdata.multimedia.length > 4;
-            }).slice(0, 12); 
-            $.each(imgFilter, function (index, value) { 
-                var imgLink = ''; 
-                imgLink = value.multimedia[4].url; 
-                
-                var $articlelist = $('.grid-list');
-                var listitem = '';
-console.log(value)
-                listitem += '<li class="article"><a href="'
-                listitem += value.url
-                listitem += '"><img class="news-img" src="'
-                listitem += imgLink
-                listitem += '"/></a><div class="text-wrapper"><p class="article-text">'
-                listitem += value.abstract
-                listitem += '</p></div></li>'
+            }).slice(0, 12);
+            $.each(imgFilter, function(index, value) {
+                var imgLink = '';
+                imgLink = value.multimedia[4].url;
 
-                $articlelist.append(listitem)
+                var $articlelist = $('.grid-list');
+                var listItem = '';
+
+                listItem += '<li class="article"><a href="'
+                listItem += value.url
+                listItem += '"><img class="news-img" src="'
+                listItem += imgLink
+                listItem += '"/></a><div class="text-wrapper"><p class="article-text">'
+                listItem += value.abstract
+                listItem += '</p></div></li>'
+
+                $articlelist.append(listItem)
             })
         })
     });
 
-    $(document).on('click', 'a', function (event) {
-        event.preventDefault(); 
-        var url = $(this).attr('href'); 
+    $(document).on('click', 'a', function(event) {
+        event.preventDefault();
+        var url = $(this).attr('href');
         window.open(url, '_blank');
     });
 })
